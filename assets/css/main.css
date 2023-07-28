@@ -132,6 +132,10 @@ span.ds-department{ color: #373737; font-weight: 500; font-size: 18px; padding-b
 	filter: drop-shadow(0 0 5px rgb(131, 239, 131));
 }
   
+img:hover {
+	transform: scale(1.06);
+	transition: all 0.3s ease;
+}
 
 .btn-shadow {
     box-shadow: 10px 0px 30px rgba(167, 163, 163, 0.5); /* Adjust to your preference */
@@ -140,11 +144,11 @@ span.ds-department{ color: #373737; font-weight: 500; font-size: 18px; padding-b
 .button-shadow {
 	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
 	transition: all 0.3s ease; /* Optional: for smooth hover effect */
-  }
+}
   
-  .button-shadow:hover {
+.button-shadow:hover {
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Optional: increases shadow on hover */
-  }
+}
 
 .button-shadow-black {
 	border: 2px solid orange; /* Adjust to your preferred color */
@@ -190,9 +194,14 @@ span.ds-department{ color: #373737; font-weight: 500; font-size: 18px; padding-b
 	border: 1px solid #ccc;
 	padding: 15px;
 	border-radius: 5px;
-	transition: border-color 0.3s ease;
+	transition: border-color 0.3s ease, transform 0.3s ease; /* Add transform to transition for smooth scaling */
   }
   
+  .lightbox-section:hover {
+	border-color: #666;
+	transform: scale(1.02); /* Make the section scale up slightly when hovered upon */
+  }
+
   .lightbox-section:hover {
 	border-color: #888;
   }
@@ -210,6 +219,7 @@ span.ds-department{ color: #373737; font-weight: 500; font-size: 18px; padding-b
 	display: flex;
 	align-items: stretch; /* This will make all columns the same height */
   }
+
 /*-------------------------------------------------------------------------------
  Responsive XS Style @media (max-width: 767px) 
 -------------------------------------------------------------------------------*/
