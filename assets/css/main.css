@@ -50,7 +50,7 @@ svg,img { max-width: 100%; height: auto; }
   2. >>> Banner Style
 ----------------------------------------------------------------*/
 .ds-banner section{ padding-left: 70px; padding-right: 100px; }
-.ds-banner section h1 span{ display: block; text-transform: uppercase; letter-spacing: 1px;  font-weight: 500; font-size: 16px; padding-bottom: 30px; }
+.ds-banner section h1 span{ display: block; text-transform: uppercase; letter-spacing: 1px;  font-weight: 500; font-size: 16px; padding-bottom: 30px;}
 .ds-banner section h1{ font-weight: 600; font-size: 48px; line-height: 60px; color: #000; }
 .ds-numbervalulist{ list-style: none; display: flex; align-items: center; flex-wrap: wrap; margin: 0; padding: 0; margin-top: 60px; }
 .ds-numbervalulist li{ margin-right: 60px; }
@@ -73,7 +73,12 @@ svg,img { max-width: 100%; height: auto; }
 .ds-skills-section{ padding-bottom: 105px; }
 .ds-skills-list{ list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; align-items: center; margin-top: 11px; }
 .ds-skills-list li{ display: inline-block; color: #373737; font-size: 16px; padding:10px 20px; background-color: #FFF; border: 1px solid #D7D7D7;
-  border-radius: 27px; margin-right: 15px; margin-bottom: 15px;  font-weight: 500;}
+  border-radius: 27px; margin-right: 15px; margin-bottom: 15px;  font-weight: 500; transition: all 0.3s ease; /* Add a transition to make the effects smooth */}
+
+.ds-skills-list li:hover {
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Add a shadow underneath the button */
+	transform: scale(1.05); /* Make the button scale up slightly */
+  }
 
 /*-----------------------------------------------------------------
   5. >>> Experience Style
@@ -202,10 +207,6 @@ img:hover {
 	transform: scale(1.02); /* Make the section scale up slightly when hovered upon */
   }
 
-  .lightbox-section:hover {
-	border-color: #888;
-  }
-
   figure {
 	padding: 10px; /* Adjust as needed */
   }
@@ -218,6 +219,10 @@ img:hover {
   .ds-banner .row {
 	display: flex;
 	align-items: stretch; /* This will make all columns the same height */
+  }
+  
+  .span-color {
+	color: #a09a9a;
   }
 
 /*-------------------------------------------------------------------------------
